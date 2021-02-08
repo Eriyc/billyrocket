@@ -12,9 +12,9 @@ const IndexPage = () => {
   const [dt, setDt] = useState(travelTime);
 
   useEffect(() => {
-    // play music
     if (audioRef.current) {
       audioRef.current.click();
+      audioRef.current.volume = 0.3;
       audioRef.current.play();
     }
 
