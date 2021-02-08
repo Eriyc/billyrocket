@@ -15,7 +15,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <header>
-      <h1>How far has Billyrocket Travelled?</h1>
+      <h1>How far has Billyrocket travelled?</h1>
     </header>
     {children}
     <footer>
