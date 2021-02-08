@@ -13,6 +13,9 @@ const IndexPage = () => {
 
   useEffect(() => {
     // play music
+    if (audioRef.current) {
+      audioRef.current.play();
+    }
 
     let secTimer = setInterval(() => {
       const now = Date.now();
@@ -45,7 +48,7 @@ const IndexPage = () => {
   ).toFixed(0);
 
   return (
-    <Layout title="Billy rocket calculator">
+    <Layout title="Billyrocket calculator">
       <main className={cl.main}>
         <section className={cl.box}>
           <span>
@@ -66,7 +69,7 @@ const IndexPage = () => {
           <code>will be reached in {toUniversesEnd} years</code>
         </section>
         <img src="/rocket_man.png"></img>
-        <audio ref={audioRef}></audio>
+        <audio ref={audioRef} loop src="/pog.mp3"></audio>
       </main>
     </Layout>
   );
