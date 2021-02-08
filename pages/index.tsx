@@ -14,6 +14,7 @@ const IndexPage = () => {
   useEffect(() => {
     // play music
     if (audioRef.current) {
+      audioRef.current.click();
       audioRef.current.play();
     }
 
