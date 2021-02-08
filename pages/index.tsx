@@ -1,4 +1,4 @@
-import { createRef, useEffect, useRef, useState } from "react";
+import { createRef, useEffect, useState } from "react";
 import Layout from "../components/Layout";
 import cl from "../styles/home.module.scss";
 
@@ -12,9 +12,7 @@ const IndexPage = () => {
   const [dt, setDt] = useState(travelTime);
 
   useEffect(() => {
-
     // play music
-    
 
     let secTimer = setInterval(() => {
       const now = Date.now();
@@ -24,8 +22,6 @@ const IndexPage = () => {
 
     return () => {
       clearInterval(secTimer);
-
-      
     };
   }, []);
 
